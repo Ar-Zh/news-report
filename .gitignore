@@ -1,0 +1,6 @@
+$ cat .gitignore
+*.[oa]
+*~
+*.log
+node_modules/
+.idea/
