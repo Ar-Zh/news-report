@@ -115,8 +115,13 @@ gulp.task('webpack', function(callback) {
 });
 
 lazyRequireTask('images', './tasks/images', {
-    src: 'src/**/*.{svg,png,jpeg,jpg}',
+    src: 'src/images/*.{svg,png,jpeg,jpg}',
     dst: 'public/img'
+});
+
+lazyRequireTask('fonts', './tasks/fonts', {
+    src: 'src/fonts/*.woff',
+    dst: 'public/fonts'
 });
 
 lazyRequireTask('clean', './tasks/clean', {
@@ -125,15 +130,19 @@ lazyRequireTask('clean', './tasks/clean', {
 
 gulp.task('build', gulp.series('clean',
     gulp.parallel(
-        'pug', 'less', 'webpack', 'images'))
+        'pug', 'less', 'webpack', 'images', 'fonts'))
 );
 
 gulp.task('watch', function() {
     gulp.watch('src/**/*.pug', gulp.series('pug'));
     gulp.watch('src/**/*.less', gulp.series('less'));
-    gulp.watch('src/**/*.{svg,png,jpeg,jpg}', gulp.series('images')).on('unlink', function(filepath) {
+    gulp.watch('src/images/*.{svg,png,jpeg,jpg}', gulp.series('images')).on('unlink', function(filepath) {
         remember.forget('images', path.resolve(filepath));
         delete cached.caches.images[path.resolve(filepath)];
+    });
+    gulp.watch('src/fonts/*.woff', gulp.series('fonts')).on('unlink', function(filepath) {
+        remember.forget('fonts', path.resolve(filepath));
+        delete cached.caches.fonts[path.resolve(filepath)];
     });
 });
 

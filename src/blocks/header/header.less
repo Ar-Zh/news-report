@@ -1,6 +1,14 @@
-// Для импорта в диспетчер подключений: @import './src/blocks/header/header.less';
-
-
 .header {
-  
+  height: 63px;
+  display: flex;
+  overflow: hidden;
+
+  & > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 16px;
+    padding-top: 1px;
+    overflow: hidden;
+  }
 }

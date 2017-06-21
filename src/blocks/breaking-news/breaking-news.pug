@@ -1,0 +1,39 @@
+include ../news-block/news-block
+include ../news-feed/news-feed
+include ../report/report
+include ../main-button/main-button
+
+-
+    var data = {
+    image: './img/breaking-news-main-screen.jpg',
+    label: 'Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus.'
+    };
+    var blocksdata = {
+    classname: 'breaking-news'
+    };
+    var feedsdata = {
+    classname: 'breaking-news__feed'
+    };
+    var data1 = {
+    image: './img/breaking1.jpg'
+    };
+    var data2 = {
+    image: './img/breaking2.jpg'
+    };
+    var data3 = {
+    image: './img/breaking3.jpg'
+    };
+    var data4 = {
+    image: './img/breaking4.jpg'
+    };
+    var input_name = 'breaking news';
+
++newsblock(blocksdata)
+    +report(data)
+    +newsfeed(feedsdata)
+        +report(data1)
+        +report(data2)
+        +report(data3)
+        +report(data4)
+    +mainbutton(input_name)
+

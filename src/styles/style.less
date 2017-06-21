@@ -1,6 +1,30 @@
-@import url(../../node_modules/bootstrap/less/bootstrap);
+// libraries
+@import "../../node_modules/bootstrap/less/normalize";
+
+// helpers
 @import "variables";
 @import "mixins";
 @import "fonts";
+
+// common styles
 @import "main";
-@import "../blocks/header/header";
+
+// pug-mixin styles
+@import "../blocks/main-content/main-content";
+@import "../blocks/aside-content/aside-content";
+@import "../blocks/news-block/news-block";
+@import "../blocks/news-feed/news-feed";
+@import "../blocks/report/report";
+@import "../blocks/nav-item/nav-item";
+@import "../blocks/main-button/main-button";
+
+// blocks
+@import "../blocks/layout/layout";
+@import '../blocks/header/header.less';
+@import "../blocks/logo/logo";
+@import "../blocks/header-nav/header-nav";
+@import "../blocks/social-nav/social-nav";
+@import "../blocks/search/search";
+@import "../blocks/main-navbar/main-navbar";
+@import "../blocks/breaking-news/breaking-news";
+@import "../blocks/video-news/video-news";

@@ -1,0 +1,29 @@
+include ../news-block/news-block
+include ../news-feed/news-feed
+include ../report/report
+include ../main-button/main-button
+
+-
+    datablock = {
+    classname: 'video-news'
+    };
+    datafeed = {
+    classname: 'video-news__feed'
+    };
+    datareport = {
+    image: './img/video-news.png',
+    label: 'Lorem ipsum dolor sit amet conse ctetur adipiscing elit'
+    };
+    mainbutton = 'more +';
+
++newsblock(datablock)
+    +newsfeed(datafeed)
+        +report(datareport)
+            +mainbutton()
+        +report(datareport)
+            +mainbutton()
+        +report(datareport)
+            +mainbutton()
+        +report(datareport)
+            +mainbutton()
+    +mainbutton(mainbutton)

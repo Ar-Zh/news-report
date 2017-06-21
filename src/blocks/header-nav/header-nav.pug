@@ -1,0 +1,19 @@
+include ../nav-item/nav-item
+
+-
+  var data = [
+  {name: "Home", url: '#'},
+  {name: "About Us", url: '#'},
+  {name: "Contact Us", url: '#'},
+  {name: "Subscribe", url: '#'},
+  {name: "Login", url: '#'}
+  ];
+    var i = data.length;
+    var j = 1;
+nav
+    ul.header-nav
+        each item in data
+            +navitem(item.url, item.name)
+            - j = ++j;
+            if i >= j
+                span |

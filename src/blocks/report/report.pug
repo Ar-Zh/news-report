@@ -1,0 +1,16 @@
+mixin report(data)
+    article.report
+        if data.header
+            h3.report__header= data.header
+        if data.image
+            img.report__image(src= data.image, alt= data.name)
+        if data.date
+            .report__date
+                p= data.date
+        if data.label
+            .report__label
+                p= data.label
+        if data.text
+            .report__text
+                p= data.text
+        block

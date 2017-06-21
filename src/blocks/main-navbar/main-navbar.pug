@@ -1,0 +1,20 @@
+include ../nav-item/nav-item
+
+-
+    var data = [
+    {name: "world news", url: '#'},
+    {name: "sports", url: '#'},
+    {name: "tech", url: '#'},
+    {name: "business", url: '#'},
+    {name: "Movies", url: '#'},
+    {name: "entertainment", url: '#'},
+    {name: "culture", url: '#'},
+    {name: "books", url: '#'},
+    {name: "classifieds", url: '#'},
+    {name: "blogs", url: '#'}
+    ];
+
+nav
+    ul.main-navbar
+        each item in data
+            +navitem(item.url, item.name)

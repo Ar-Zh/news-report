@@ -1,0 +1,14 @@
+extends ../blocks/layout/layout
+
+block head
+    include ../blocks/head/head
+
+block content
+    include ../blocks/header/header
+    include ../blocks/main-navbar/main-navbar
+    include ../blocks/main-content/main-content
+    +maincontent()
+        include ../blocks/breaking-news/breaking-news
+    include ../blocks/aside-content/aside-content
+    +asidecontent()
+        include ../blocks/video-news/video-news
