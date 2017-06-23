@@ -1,15 +1,22 @@
 .header-nav {
+  padding: 0 1.5rem;
   display: flex;
-  margin-top: 41px;
-  padding-left: 98px;
-  font-size: @font-size--main;
+  justify-content: flex-end;
+  flex-grow: 1;
   overflow: hidden;
 
-  & > .nav-item {
-    padding: 0 10px;
+  .header-nav__list {
+    display: flex;
+    justify-content: flex-start;
+  }
 
-    .nav-item__link {
-      color: @color-decorating;
-    }
+  .nav-item {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: .8rem;
+  }
+
+  .nav-item__link {
+    color: @color-decorating;
   }
 }

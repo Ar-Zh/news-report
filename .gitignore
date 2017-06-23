@@ -4,3 +4,4 @@ $ cat .gitignore
 *.log
 node_modules/
 .idea/
+public/

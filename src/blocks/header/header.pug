@@ -1,8 +1,11 @@
-header.header
+include ../logo/logo
 
-    include ../logo/logo
+header.header
+    +logo({img: './img/logo.png', name: 'the news reporter', linc: '#'})
+
     include ../header-nav/header-nav
 
     .container
+
         include ../social-nav/social-nav
         include ../search/search

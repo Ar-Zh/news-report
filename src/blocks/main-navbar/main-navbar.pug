@@ -14,7 +14,7 @@ include ../nav-item/nav-item
     {name: "blogs", url: '#'}
     ];
 
-nav
-    ul.main-navbar
+nav.main-navbar
+    ul.main-navbar__list
         each item in data
             +navitem(item.url, item.name)

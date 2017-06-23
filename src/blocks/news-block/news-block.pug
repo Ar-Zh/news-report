@@ -1,5 +1,6 @@
 mixin newsblock(data)
     section.news-block(class= data.classname)
-        if data.header
-            h2.news-block__header= data.header
-        block
+        if data.head
+            h2.news-block__head= data.head
+        .news-block__content
+            block

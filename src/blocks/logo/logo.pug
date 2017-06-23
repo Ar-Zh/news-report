@@ -1,4 +1,6 @@
-img.logo(
-src='./img/logo.png'
-alt='logotype'
-)
+mixin logo(data)
+    a.logo(href= data.linc)
+        img.logo-img(
+        src= data.img
+        alt= data.name
+        )

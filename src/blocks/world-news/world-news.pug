@@ -1,0 +1,37 @@
+include ../news-block/news-block
+include ../report/report
+include ../main-button/main-button
+
+-
+    var newsblockdata = {
+    classname: 'world-news',
+    head: 'From arround the world'
+    };
+    var data1 = {
+    image: '../img/world-news1.png',
+    name: 'world news',
+    label: 'Lorem ipsum dolor sit amet, consectetur',
+    text: 'Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.',
+    link: 'read more'
+    };
+    var data2 = {
+    image: '../img/world-news2.png',
+    name: 'world news',
+    label: 'Lorem ipsum dolor sit amet, consectetur',
+    text: 'Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.',
+    link: 'read more'
+    };
+    var data3 = {
+    image: '../img/world-news3.png',
+    name: 'world news',
+    label: 'Lorem ipsum dolor sit amet, consectetur',
+    text: 'Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.',
+    link: 'read more'
+    };
+    var buttondata = 'more +';
+
++newsblock(newsblockdata)
+    +report(data1)
+    +report(data2)
+    +report(data3)
+    +mainbutton(buttondata)

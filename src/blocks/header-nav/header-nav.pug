@@ -10,8 +10,9 @@ include ../nav-item/nav-item
   ];
     var i = data.length;
     var j = 1;
-nav
-    ul.header-nav
+
+nav.header-nav
+    ul.header-nav__list
         each item in data
             +navitem(item.url, item.name)
             - j = ++j;

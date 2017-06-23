@@ -1,67 +1,74 @@
 .breaking-news {
-  height: 315px;
-  background-color: @color-secondary;
-  overflow: hidden;
-  position: relative;
 
-  & > .report {
-    padding-left: 11px;
-    padding-right: 12px;
-    padding-top: 13px;
+  & .news-block__content {
+    height: 31.5rem;
+    background-color: @color-secondary;
+    overflow: hidden;
     position: relative;
 
-    & > .report__image {
-      height: 283px;
-      width: 523px;
-      border: 3px solid #000;
-    }
-
-    & > .report__label {
-      height: 36px;
-      width: 523px;
-      padding-top: 6px;
-      background-color: rgba(0, 0, 0, .7);
-      position: relative;
-      bottom: 49px;
-      left: 3px;
-
-      & > p {
-        margin-left: 143px;
-        margin-right: 20px;
-        margin-top: 0;
-        margin-bottom: 0;
-        color: @color-main;
-        font-size: @font-size--nav;
-        line-height: @line-height--main;
-      }
-    }
-  }
-
-  .breaking-news__feed {
-    flex-direction: column;
-    margin: 0;
-    padding-top: 13px;
-
     & > .report {
-      height: 67px;
-      width: 107px;
-      margin-bottom: 7px;
+      padding-left: 1.1rem;
+      padding-right: 1.2rem;
+      padding-top: 1.3rem;
+      position: relative;
 
-      &:nth-child(1) {
-        height: 61px;
-        width: 101px;
-        border: 3px solid @color-decorating;
+      & > .report__image {
+        height: 28.3rem;
+        width: 52.3rem;
+        border: 3px solid #000;
+      }
+
+      & > .report__label {
+        height: 3.6rem;
+        width: 36rem;
+        padding-top: .6rem;
+        padding-left: 14.3rem;
+        padding-right: 2rem;
+        background-color: rgba(0, 0, 0, .7);
+        color: @color-main;
+        font-size: @font-size--label;
+        line-height: @line-height--main;
+        position: relative;
+        bottom: 4.8rem;
+        left: .3rem;
       }
     }
-  }
 
-  & > .main-button {
-    height: 26px;
-    width: 108px;
-    font-size: @font-size--decorating;
-    bottom: 0;
-    left: 0;
+    & > .main-button {
+      padding: .8rem;
+      padding-right: 1.4rem;
+      font-size: @font-size--decorating;
+      bottom: 0;
+      left: 0;
+    }
   }
 }
 
+.breaking-news__feed {
+  flex-direction: column;
+  margin: 0;
+  padding-top: 1.3rem;
 
+  & > .report {
+    height: 6.7rem;
+    width: 10.7rem;
+    margin-bottom: .7rem;
+
+    &:nth-child(1) {
+      height: 6.1rem;
+      width: 10.1rem;
+      border: 3px solid @color-decorating;
+
+      .report__image {
+        height: 6.7rem;
+        width: 10.7rem;
+      }
+    }
+  }
+
+  & > .report__image {
+    height: 6.7rem;
+    width: 10.7rem;
+    background-position: 0 0;
+  }
+}
