@@ -1,7 +1,9 @@
 doctype html
 html
     head
-        block head
+        include ../head/head
     body
-        .content
-            block content
+        .container
+            .row.wrapper
+                include ../header/header
+                block content

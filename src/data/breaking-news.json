@@ -1,0 +1,33 @@
+{
+    "block-data": {
+        "classname": "breaking-news"
+    },
+
+    "feed-data": {
+        "classname": "breaking-news__feed"
+    },
+
+    "report-data": [
+        {
+            "image": "./img/breaking1.jpg",
+            "image-big": "./img/breaking-news-main-screen.jpg",
+            "label": "Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus."
+        },
+        {
+            "image": "./img/breaking2.jpg",
+            "label": "Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus."
+        },
+        {
+            "image": "./img/breaking3.jpg",
+            "label": "Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus."
+        },
+        {
+            "image": "./img/breaking4.jpg",
+            "label": "Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus."
+        }
+    ],
+
+    "button-data": {
+        "text": "breaking news"
+    }
+}

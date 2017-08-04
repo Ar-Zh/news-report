@@ -1,3 +1,6 @@
-mixin navitem(url, name)
-    li.nav-item
-        a.nav-item__link(href= url)= name
+mixin navitem(linkUrl, itemText, className, linkClass)
+    li(class= className)
+        a(
+        href= linkUrl
+        class= linkClass
+        )= itemText

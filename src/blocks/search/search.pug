@@ -1,3 +1,7 @@
-form.search
-    input.search__text(type='text')
-    input.search__button(type='button')
+form.navbar-form.search(
+role="search"
+)
+    .input-group.search__wrapper
+        input.form-control.search__text(type='search')
+        span.input-group-btn.search__button-wrapper
+            button.btn.btn-default.search__button(type='button')

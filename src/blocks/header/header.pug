@@ -1,11 +1,18 @@
-include ../logo/logo
-
-header.header
-    +logo({img: './img/logo.png', name: 'the news reporter', linc: '#'})
-
-    include ../header-nav/header-nav
-
-    .container
-
-        include ../social-nav/social-nav
-        include ../search/search
+nav.navbar.navbar-default.header
+    .container.header__wrap
+        .navbar-header.header__item
+            button.navbar-toggle.collapsed(
+            type="button"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+            )
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            include ../logo/logo
+        .collapse.navbar-collapse.header__item.header__item_collapse
+            include ../header-nav/header-nav
+            include ../social-nav/social-nav
+            include ../search/search

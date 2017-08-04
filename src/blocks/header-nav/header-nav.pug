@@ -2,19 +2,13 @@ include ../nav-item/nav-item
 
 -
   var data = [
-  {name: "Home", url: '#'},
-  {name: "About Us", url: '#'},
-  {name: "Contact Us", url: '#'},
-  {name: "Subscribe", url: '#'},
-  {name: "Login", url: '#'}
+  {name: "Home", url: '#', className: 'header-nav__item header-nav__item_active', linkClass: 'header-nav__linc-class header-nav__linc-class_active'},
+  {name: "About Us", url: '#', className: 'header-nav__item', linkClass: 'header-nav__linc-class'},
+  {name: "Contact Us", url: '#', className: 'header-nav__item', linkClass: 'header-nav__linc-class'},
+  {name: "Subscribe", url: '#', className: 'header-nav__item', linkClass: 'header-nav__linc-class'},
+  {name: "Login", url: '#', className: 'header-nav__item', linkClass: 'header-nav__linc-class'}
   ];
-    var i = data.length;
-    var j = 1;
 
-nav.header-nav
-    ul.header-nav__list
-        each item in data
-            +navitem(item.url, item.name)
-            - j = ++j;
-            if i >= j
-                span |
+ul.nav.navbar-nav.header-nav
+    each item in data
+        +navitem(item.url, item.name, item.className, item.linkClass)

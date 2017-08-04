@@ -1,22 +1,28 @@
 .header-nav {
-  padding: 0 1.5rem;
-  display: flex;
-  justify-content: flex-end;
-  flex-grow: 1;
-  overflow: hidden;
-
-  .header-nav__list {
-    display: flex;
-    justify-content: flex-start;
+  position: absolute;
+  left: 349px;
+  top: 49px;
+  .header-nav__item{
+    border-left: 1px solid @main-color;
+    padding-right: 11px;
+    padding-left: 11px;
+    height: 11px;
+    &:first-child{
+      border-left: 0;
+      padding-left: 0;
+    }
   }
-
-  .nav-item {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding-bottom: .8rem;
+  .header-nav__item:hover{}
+  .header-nav__item_active{}
+  .header-nav__linc-class{
+    padding: 0;
+    bottom: 3px;
   }
+  .header-nav__linc-class:hover{}
+  .header-nav__linc-class_active{}
 
-  .nav-item__link {
-    color: @color-decorating;
+  @media(max-width: @screen-sm-max){
+    left: 260px;
+    top: 25px;
   }
 }

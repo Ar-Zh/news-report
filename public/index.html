@@ -2,125 +2,45 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div class="content">
-      <header class="header"><a class="logo" href="#"><img class="logo-img" src="./img/logo.png" alt="the news reporter"></a>
-        <nav class="header-nav">
-          <ul class="header-nav__list">
-                    <li class="nav-item"><a class="nav-item__link" href="#">Home</a></li><span>|</span>
-                    <li class="nav-item"><a class="nav-item__link" href="#">About Us</a></li><span>|</span>
-                    <li class="nav-item"><a class="nav-item__link" href="#">Contact Us</a></li><span>|</span>
-                    <li class="nav-item"><a class="nav-item__link" href="#">Subscribe</a></li><span>|</span>
-                    <li class="nav-item"><a class="nav-item__link" href="#">Login</a></li>
-          </ul>
+    <div class="container">
+      <div class="row wrapper">
+        <nav class="navbar navbar-default header">
+          <div class="container header__wrap">
+            <div class="navbar-header header__item">
+              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand logo" href="#"><img alt="the news reporter" src="./img/logo.png"></a>
+            </div>
+            <div class="collapse navbar-collapse header__item header__item_collapse">
+              <ul class="nav navbar-nav header-nav">
+                              <li class="header-nav__item header-nav__item_active"><a class="header-nav__linc-class header-nav__linc-class_active" href="#">Home</a></li>
+                              <li class="header-nav__item"><a class="header-nav__linc-class" href="#">About Us</a></li>
+                              <li class="header-nav__item"><a class="header-nav__linc-class" href="#">Contact Us</a></li>
+                              <li class="header-nav__item"><a class="header-nav__linc-class" href="#">Subscribe</a></li>
+                              <li class="header-nav__item"><a class="header-nav__linc-class" href="#">Login</a></li>
+              </ul>
+              <ul class="nav navbar-nav social-nav">
+                <li class="social-nav__item social-nav__item_tt"></li>
+                <li class="social-nav__item social-nav__item_fb"></li>
+                <li class="social-nav__item social-nav__item_hz"></li>
+                <li class="social-nav__item social-nav__item_fbl"></li>
+                <li class="social-nav__item social-nav__item_gp"></li>
+              </ul>
+              <form class="navbar-form search" role="search">
+                <div class="input-group search__wrapper">
+                  <input class="form-control search__text" type="search"><span class="input-group-btn search__button-wrapper">
+                    <button class="btn btn-default search__button" type="button"></button></span>
+                </div>
+              </form>
+            </div>
+          </div>
         </nav>
-        <div class="container">
-          <ul class="social-nav">
-                      <li class="nav-item"><a class="nav-item__link" href="#"></a></li>
-                      <li class="nav-item"><a class="nav-item__link" href="#"></a></li>
-                      <li class="nav-item"><a class="nav-item__link" href="#"></a></li>
-          </ul>
-          <form class="search">
-            <input class="search__text" type="text">
-            <input class="search__button" type="button">
-          </form>
-        </div>
-      </header>
-      <nav class="main-navbar">
-        <ul class="main-navbar__list">
-                <li class="nav-item"><a class="nav-item__link" href="#">world news</a></li>
-                <li class="nav-item"><a class="nav-item__link" href="#">sports</a></li>
-                <li class="nav-item"><a class="nav-item__link" href="#">tech</a></li>
-                <li class="nav-item"><a class="nav-item__link" href="#">business</a></li>
-                <li class="nav-item"><a class="nav-item__link" href="#">Movies</a></li>
-                <li class="nav-item"><a class="nav-item__link" href="#">entertainment</a></li>
-                <li class="nav-item"><a class="nav-item__link" href="#">culture</a></li>
-                <li class="nav-item"><a class="nav-item__link" href="#">books</a></li>
-                <li class="nav-item"><a class="nav-item__link" href="#">classifieds</a></li>
-                <li class="nav-item"><a class="nav-item__link" href="#">blogs</a></li>
-        </ul>
-      </nav>
-            <main class="main-content">
-              <section class="news-block breaking-news">
-                <div class="news-block__content">
-                  <article class="report"><img class="report__image" src="./img/breaking-news-main-screen.jpg">
-                    <div class="report__label">Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque, mattis venenatis lectus.
-                    </div>
-                  </article>
-                  <section class="news-feed breaking-news__feed">
-                    <article class="report"><img class="report__image" src="./img/breaking1.jpg">
-                    </article>
-                    <article class="report"><img class="report__image" src="./img/breaking2.jpg">
-                    </article>
-                    <article class="report"><img class="report__image" src="./img/breaking3.jpg">
-                    </article>
-                    <article class="report"><img class="report__image" src="./img/breaking4.jpg">
-                    </article>
-                  </section>
-                  <button class="main-button" type="button">breaking news</button>
-                </div>
-              </section>
-              <section class="news-block world-news">
-                <h2 class="news-block__head">From arround the world</h2>
-                <div class="news-block__content">
-                  <article class="report"><img class="report__image" src="../img/world-news1.png" alt="world news">
-                    <div class="report__label">Lorem ipsum dolor sit amet, consectetur
-                    </div>
-                    <div class="report__text">
-                      <p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
-                    </div>
-                    <div class="report__link"><a>read more</a></div>
-                  </article>
-                  <article class="report"><img class="report__image" src="../img/world-news2.png" alt="world news">
-                    <div class="report__label">Lorem ipsum dolor sit amet, consectetur
-                    </div>
-                    <div class="report__text">
-                      <p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
-                    </div>
-                    <div class="report__link"><a>read more</a></div>
-                  </article>
-                  <article class="report"><img class="report__image" src="../img/world-news3.png" alt="world news">
-                    <div class="report__label">Lorem ipsum dolor sit amet, consectetur
-                    </div>
-                    <div class="report__text">
-                      <p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
-                    </div>
-                    <div class="report__link"><a>read more</a></div>
-                  </article>
-                  <button class="main-button" type="button">more +</button>
-                </div>
-              </section>
-            </main>
-            <aside class="aside-content">
-              <section class="news-block video-news">
-                <div class="news-block__content">
-                  <section class="news-feed video-news__feed">
-                    <article class="report"><img class="report__image" src="./img/video-news.png">
-                      <div class="report__label">Lorem ipsum dolor sit amet conse ctetur adipiscing elit
-                      </div>
-                      <button class="main-button" type="button"></button>
-                    </article>
-                    <article class="report"><img class="report__image" src="./img/video-news.png">
-                      <div class="report__label">Lorem ipsum dolor sit amet conse ctetur adipiscing elit
-                      </div>
-                      <button class="main-button" type="button"></button>
-                    </article>
-                    <article class="report"><img class="report__image" src="./img/video-news.png">
-                      <div class="report__label">Lorem ipsum dolor sit amet conse ctetur adipiscing elit
-                      </div>
-                      <button class="main-button" type="button"></button>
-                    </article>
-                    <article class="report"><img class="report__image" src="./img/video-news.png">
-                      <div class="report__label">Lorem ipsum dolor sit amet conse ctetur adipiscing elit
-                      </div>
-                      <button class="main-button" type="button"></button>
-                    </article>
-                  </section>
-                  <button class="main-button" type="button">more +</button>
-                </div>
-              </section>
-            </aside>
+        <main class="main-content col-md-26">
+        </main>
+        <aside class="aside-content col-md-10">
+        </aside>
+      </div>
     </div>
   </body>
 </html>

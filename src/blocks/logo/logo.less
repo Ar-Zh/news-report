@@ -1,13 +1,12 @@
-.logo {
-  height: 6.3rem;
-  flex-shrink: 0;
+.logo{
+  padding-top: 18px;
+  padding-bottom: 0;
 
-  & > .logo-img {
-    height: 6.3rem;
-    width: 24.1rem;
-    overflow: hidden;
-    color: @gray;
-    white-space: nowrap;
-    cursor: pointer;
+  @media(max-width: @screen-sm-max){
+
+    padding-top: 12px;
+    & > img {
+      height: 26px;
+    }
   }
 }

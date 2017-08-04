@@ -1,17 +1,20 @@
 mixin report(data)
     article.report
-        if data.date
-            .report__date
-                = data.date
+        if data.time
+            time.report__date
+                = data.time
         if data.image
-            img.report__image(src= data.image, alt= data.name)
+            img.report__image(
+            src= data.image
+            alt= data.name
+            )
         if data.label
-            .report__label
+            mark.report__label
                 = data.label
         if data.text
-            .report__text
-                p= data.text
+            p.report__text
+                = data.text
         if data.link
-            .report__link
-                a= data.link
+            a.report__link
+                = data.link
         block

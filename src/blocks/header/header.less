@@ -1,17 +1,13 @@
-.header {
-  height: 6.3rem;
-  margin-top: 1.6rem;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  overflow: hidden;
+.header{
+  border: none;
 
-  & > .container {
-    height: 6.3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-shrink: 0;
-    overflow: hidden;
+  .header__wrap{
+
+    @media(min-width: @screen-md-min){
+      width: 960px;
+    }
+  }
+  .header__item_collapse{
+    position: relative;
   }
 }

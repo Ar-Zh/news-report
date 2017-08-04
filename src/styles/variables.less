@@ -1,17 +1,46 @@
-@color-main:             #fff;
-@color-secondary:        #202021;
-@color-decorating:       #cf0000;
-@color-bg:               #fff;
 
-@gray:                   #bababa;
-@gray--light:            #e4e4e4;
+// MAIN VARIABLES
+@main-color:                                   #202021;
+@main-color-decorating:                        #cf0000;
+@main-grey-border-color:                       #bababa;
+@img-folder-path:                              '../img/';
 
-@font-size--main:        1.2rem;
-@font-size--decorating:  1rem;
-@font-size--label:       1.5rem;
-@font-size--nav:         1.9rem;
-@font-size--h2:          2.4rem;
+//________________________________________________________________________
 
-@line-height--main:      1.2;
+// BOOTSTRAP VARIABLES
 
-@img-folder-path:        '../img/';
+//== Scaffolding
+@text-color:                              @main-color;
+
+//== Typography
+@font-family-base:                        'Arial', sans-serif;
+@font-size-base:                          12px;
+
+//== Components
+@border-radius-base:                      0;
+@border-radius-large:                     0;
+@border-radius-small:                     0;
+
+//== Grid system
+@grid-gutter-width:                       20px;
+@grid-columns:                            36;
+@container-lg:                            980px;
+@container-md:                            980px;
+
+//== Navbar
+@navbar-margin-bottom:                    15px;
+
+// .navbar-default
+@navbar-default-bg:                       @body-bg;
+@navbar-default-border:                   transparent;
+// .navbar-default > .navbar-nav > li > a
+@navbar-default-link-color:               @main-color-decorating;
+// .navbar-default > .navbar-nav > li > a :hover & :focus
+@navbar-default-link-hover-color:         lighten(@main-color-decorating, 12%);
+
+@navbar-default-toggle-border-color:      @main-color-decorating;
+@navbar-default-toggle-icon-bar-bg:       @main-color;
+@navbar-default-toggle-hover-bg:          @main-color-decorating;
+
+//== Forms
+@input-border:                            @main-grey-border-color;

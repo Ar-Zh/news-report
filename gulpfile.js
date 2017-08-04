@@ -1,16 +1,14 @@
 'use strict'
 
-const gulp = require('gulp')
+const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
-
-
 const AssetsPlugin = require('assets-webpack-plugin');
 const webpack = require('webpack');
 const notifier = require('node-notifier');
 const gulplog = require('gulplog');
 const path = require('path');
-
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
+
 
 function lazyRequireTask(taskName, path, options) {
     options = options || {};
