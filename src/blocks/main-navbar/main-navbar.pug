@@ -2,19 +2,19 @@ include ../nav-item/nav-item
 
 -
     var data = [
-    {name: "world news", url: '#'},
-    {name: "sports", url: '#'},
-    {name: "tech", url: '#'},
-    {name: "business", url: '#'},
-    {name: "Movies", url: '#'},
-    {name: "entertainment", url: '#'},
-    {name: "culture", url: '#'},
-    {name: "books", url: '#'},
-    {name: "classifieds", url: '#'},
-    {name: "blogs", url: '#'}
+    {name: "world news", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
+    {name: "sports", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
+    {name: "tech", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
+    {name: "business", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
+    {name: "Movies", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
+    {name: "entertainment", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
+    {name: "culture", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
+    {name: "books", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
+    {name: "classifieds", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
+    {name: "blogs", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'}
     ];
 
 nav.main-navbar
-    ul.main-navbar__list
+    ul.nav.nav-tabs.main-navbar__list
         each item in data
-            +navitem(item.url, item.name)
+            +navitem(item.url, item.name, item.className, item.linkClass)
