@@ -1,7 +1,8 @@
 .header-nav {
   position: absolute;
-  left: 349px;
-  top: 49px;
+  left: 360px;
+  bottom: 10px;
+
   .header-nav__item{
     border-left: 1px solid @main-color;
     padding-right: 11px;
@@ -12,17 +13,13 @@
       padding-left: 0;
     }
   }
-  .header-nav__item:hover{}
-  .header-nav__item_active{}
-  .header-nav__linc-class{
+
+  .header-nav__linc{
     padding: 0;
     bottom: 3px;
   }
-  .header-nav__linc-class:hover{}
-  .header-nav__linc-class_active{}
 
   @media(max-width: @screen-sm-max){
     left: 260px;
-    top: 25px;
   }
 }

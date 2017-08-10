@@ -1,13 +1,31 @@
-.header{
+.header {
   border: none;
+  background-color: transparent;
 
-  .header__wrap{
 
-    @media(min-width: @screen-md-min){
-      width: 960px;
+  .header__wrap {
+    padding-top: 15px;
+    background-color: @body-bg;
+
+    @media(max-width: @screen-sm-max) {
+      height: 50px;
+      padding-top: 0;
     }
   }
-  .header__item_collapse{
+
+  .header__toggle {
+    margin-top: 8px;
+    border-radius: 3px;
+  }
+
+  .header__item_collapse {
     position: relative;
+  }
+
+  .header__item {
+
+    @media(max-width: @screen-sm-max) {
+      height: 50px;
+    }
   }
 }

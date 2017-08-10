@@ -2,13 +2,13 @@ include ../nav-item/nav-item
 
 -
   var data = [
-  {name: "Home", url: '#', className: 'header-nav__item header-nav__item_active', linkClass: 'header-nav__linc-class header-nav__linc-class_active'},
-  {name: "About Us", url: '#', className: 'header-nav__item', linkClass: 'header-nav__linc-class'},
-  {name: "Contact Us", url: '#', className: 'header-nav__item', linkClass: 'header-nav__linc-class'},
-  {name: "Subscribe", url: '#', className: 'header-nav__item', linkClass: 'header-nav__linc-class'},
-  {name: "Login", url: '#', className: 'header-nav__item', linkClass: 'header-nav__linc-class'}
+  {name: "home", url: '#', className: 'header-nav__item header-nav__item_active', linkClass: 'header-nav__linc header-nav__linc_active'},
+  {name: "about us", url: '#', className: 'header-nav__item', linkClass: 'header-nav__linc'},
+  {name: "contact us", url: '#', className: 'header-nav__item', linkClass: 'header-nav__linc'},
+  {name: "subscribe", url: '#', className: 'header-nav__item', linkClass: 'header-nav__linc'},
+  {name: "login", url: '#', className: 'header-nav__item', linkClass: 'header-nav__linc'}
   ];
 
-ul.nav.navbar-nav.header-nav
+ul.nav.navbar-nav.header-nav.text-capitalize
     each item in data
         +navitem(item.url, item.name, item.className, item.linkClass)

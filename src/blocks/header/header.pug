@@ -1,7 +1,7 @@
 nav.navbar.navbar-default.header
     .container.header__wrap
         .navbar-header.header__item
-            button.navbar-toggle.collapsed(
+            button.navbar-toggle.collapsed.header__toggle(
             type="button"
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
@@ -12,7 +12,7 @@ nav.navbar.navbar-default.header
                 span.icon-bar
                 span.icon-bar
             include ../logo/logo
-        .collapse.navbar-collapse.header__item.header__item_collapse
+        .navbar-collapse.collapse.header__item.header__item_collapse
             include ../header-nav/header-nav
             include ../social-nav/social-nav
             include ../search/search

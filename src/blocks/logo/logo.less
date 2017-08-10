@@ -1,12 +1,17 @@
-.logo{
-  padding-top: 18px;
-  padding-bottom: 0;
+.logo {
+  width: auto;
+  padding: 15px 0 0 20px;
+
+  & > .logo__img {
+    cursor: pointer;
+  }
 
   @media(max-width: @screen-sm-max){
+    padding-top: 13px;
+    padding-left: 10px;
 
-    padding-top: 12px;
-    & > img {
-      height: 26px;
+    & > .logo__img {
+      height: 24px;
     }
   }
 }

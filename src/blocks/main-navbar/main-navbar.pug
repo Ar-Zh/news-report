@@ -6,7 +6,7 @@ include ../nav-item/nav-item
     {name: "sports", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
     {name: "tech", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
     {name: "business", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
-    {name: "Movies", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
+    {name: "movies", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
     {name: "entertainment", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
     {name: "culture", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
     {name: "books", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'},
@@ -14,7 +14,6 @@ include ../nav-item/nav-item
     {name: "blogs", url: '#', className: 'main-navbar__item', linkClass: 'main-navbar__link'}
     ];
 
-nav.main-navbar
-    ul.nav.nav-tabs.main-navbar__list
-        each item in data
-            +navitem(item.url, item.name, item.className, item.linkClass)
+ul.nav.nav-tabs.main-navbar
+    each item in data
+        +navitem(item.url, item.name, item.className, item.linkClass)
